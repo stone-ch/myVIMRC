@@ -45,6 +45,8 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 set shell=/bin/bash
 
+"""""""""""""""END Vundle configuration"""""""""""""""""
+
 
 """""""""""""YouCompleteMe""""""""""""""""""""""""""""""""""
 set runtimepath+=~/.vim/bundle/YouCompleteMe
