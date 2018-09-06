@@ -80,14 +80,14 @@ autocm vimenter * NERDTree
 
 """"""""""""" An example for a vimrc file.""""""""""""""""""
 "
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2017 Sep 20
+" Maintainer: Bram Moolenaar <Bram@vim.org>
+" Last change:  2017 Sep 20
 "
 " To use it, copy it to
 "     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
+"       for Amiga:  s:.vimrc
 "  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+"     for OpenVMS:  sys$login:.vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -98,11 +98,11 @@ endif
 source $VIMRUNTIME/defaults.vim
 
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup    " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file (restore to previous version)
+  set backup    " keep a backup file (restore to previous version)
   if has('persistent_undo')
-    set undofile	" keep an undo file (undo changes after closing)
+    set undofile  " keep an undo file (undo changes after closing)
   endif
 endif
 
@@ -125,7 +125,7 @@ if has("autocmd")
 
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent    " always set autoindenting on
 
 endif " has("autocmd")
 
@@ -162,3 +162,6 @@ set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gb2312,gbk,gb18030
 set termencoding=utf-8
 set encoding=utf-8
+
+"""""""""""折叠代码"""""""""""
+set fdm=indent
