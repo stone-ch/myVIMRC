@@ -167,3 +167,8 @@ set encoding=utf-8
 
 """""""""""折叠代码"""""""""""
 set fdm=indent
+
+"""""""""""backup"""""""""""
+set noundofile
+set nobackup
+set noswapfile
