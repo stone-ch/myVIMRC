@@ -146,19 +146,6 @@ set shiftwidth=4
 set expandtab
 set nu
 
-"""""""""""""""""""自动补全"""""""""""""""""
-
-:inoremap ( ()<ESC>i
-:inoremap ) <c-r>=ClosePair(')')<CR>
-"by Suzzz：  原作者这种设置，输入{会自动补全，并且中间插入一个空行，将光标定位到空行。这对于函数是OK的，但是使用花括号初始化数组、vector时就不方便了。所以改为现在这种。只是补全，然后光标在左右括号中间。
-":inoremap { {<CR>}<ESC>O
-:inoremap { {}<ESC>i
-:inoremap } <c-r>=ClosePair('}')<CR>
-:inoremap [ []<ESC>i
-:inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap " ""<ESC>i
-:inoremap ' ''<ESC>i
-
 """""""""""乱码问题"""""""""""
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gb2312,gbk,gb18030
@@ -169,6 +156,6 @@ set encoding=utf-8
 set fdm=indent
 
 """""""""""backup"""""""""""
-set noundofile
-set nobackup
-set noswapfile
+"set noundofile
+"set nobackup
+"set noswapfile
